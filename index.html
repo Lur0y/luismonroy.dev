@@ -1,181 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Luis Monroy | Full Stack Web Developer</title>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<div class="lang-switch">
+					<button class="lang-btn active" onclick="setLang('es')">ES</button>
+					<button class="lang-btn" onclick="setLang('en')">EN</button>
+				</div>
+			</nav>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Software Pragmático LM - Desarrollo de Software a Medida, Integración de APIs y Consultoría Técnica">
-    <title>Software Pragmático LM | Sitio en Construcción</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css">
-</head>
+			<header class="header-card">
+				<img
+					src="./assets/photo.png"
+					alt="Luis Monroy"
+					class="profile-img"
+					onerror="
+						this.src =
+							'data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23a0aec0\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'
+					"
+				/>
+				<h1>Luis Monroy</h1>
+				<div class="subtitle t-text" data-es="Desarrollador Web Full Stack | Especialista en Backend & APIs" data-en="Full Stack Web Developer | Backend & API Specialist">
+					Desarrollador Web Full Stack | Especialista en Backend & APIs
+				</div>
 
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo-container">
-                <img src="assets/Logo.png" alt="Software Pragmático LM" class="logo">
-            </div>
-        </div>
-    </header>
+				<p
+					class="summary t-text"
+					data-es="Desarrollador Web Full Stack con sólido pensamiento analítico. Especializado en creación de APIs REST y desarrollo de Single Page Applications (SPA). Experiencia gestionando el ciclo de vida completo del software, enfocado en la optimización operativa, análisis de datos y la construcción de sistemas seguros y escalables."
+					data-en="Full Stack Web Developer with a strong analytical background in Mathematics and Software Engineering. Specialized in REST API development and SPA creation. Proven experience managing the entire software development lifecycle, focused on operational optimization, data analysis, and building secure, scalable application ecosystems."
+				>
+					Desarrollador Web Full Stack con sólido pensamiento analítico. Especializado en creación de APIs REST y desarrollo de Single Page Applications (SPA). Experiencia gestionando el ciclo de vida
+					completo del software, enfocado en la optimización operativa, análisis de datos y la construcción de sistemas seguros y escalables.
+				</p>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Software Pragmático LM</h1>
-                <p class="hero-subtitle">Soluciones tecnológicas profesionales</p>
-                <div class="status-badge">
-                    <span class="status-dot"></span>
-                    <span>Sitio en Construcción</span>
-                </div>
-            </div>
-        </div>
-    </section>
+				<div class="contact-info">
+					<a href="mailto:cv@luismonroy.dev">cv@luismonroy.dev</a> | <a href="tel:2224657277">22-24-65-72-77</a> |
+					<span class="t-text" data-es="Puebla, México" data-en="Puebla, Mexico">Puebla, México</span>
+				</div>
+				<a
+					href="./assets/2026_03_14_cv1_luis_monroy.pdf"
+					download="CV_Luis_Monroy_ES.pdf"
+					class="download-btn t-text"
+					data-es="Descargar CV (PDF)"
+					data-en="Download Resume (PDF)"
+					data-cv-es="./assets/2026_03_14_cv1_luis_monroy.pdf"
+					data-cv-en="./assets/2026_03_14_cv2_luis_monroy.pdf"
+				>
+					Descargar CV (PDF)
+				</a>
+			</header>
 
-    <!-- Services Section -->
-    <section class="services">
-        <div class="container">
-            <h2 class="section-title">Nuestros Servicios</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Desarrollo de Software a Medida</h3>
-                    <p class="service-description">Creamos soluciones personalizadas adaptadas a las necesidades
-                        específicas de tu negocio.</p>
-                </div>
+			<h2 class="section-title t-text" data-es="Experiencia Profesional" data-en="Professional Experience">Experiencia Profesional</h2>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="18" y1="20" x2="18" y2="10"></line>
-                            <line x1="12" y1="20" x2="12" y2="4"></line>
-                            <line x1="6" y1="20" x2="6" y2="14"></line>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Análisis de Datos</h3>
-                    <p class="service-description">Transformamos datos en información accionable para tomar decisiones
-                        estratégicas basadas en evidencia.</p>
-                </div>
+			<div class="card">
+				<div class="card-header">
+					<div>
+						<span class="job-title t-text" data-es="Controlador de Sistemas Interactivos E3" data-en="Interactive Systems Controller E3">Controlador de Sistemas Interactivos E3</span>
+						<span class="company"> | IMSS (OOAD Puebla)</span>
+					</div>
+					<span class="date t-text" data-es="02/2024 - Presente" data-en="02/2024 - Present">02/2024 - Presente</span>
+				</div>
+				<ul class="card-list">
+					<li
+						class="t-text"
+						data-es="Lidero el diseño, arquitectura y desarrollo de aplicaciones web de intranet (frontend y backend), gestionando el ciclo de vida completo del software."
+						data-en="Lead the design, architecture, and full-stack development of intranet web applications, managing the complete software development lifecycle."
+					>
+						Lidero el diseño, arquitectura y desarrollo de aplicaciones web de intranet (frontend y backend), gestionando el ciclo de vida completo del software.
+					</li>
+					<li
+						class="t-text"
+						data-es="Desarrollé SIBOP, un sistema central de inventario que da servicio a ~200 usuarios y comparte autenticación y datos mediante APIs REST. Optimicé los tiempos de respuesta en un 864% (de 3 días a 5 minutos) y reduje el tiempo de cierre de reportes técnicos en un 25%."
+						data-en="Engineered SIBOP, a central inventory hub serving ~200 users via REST APIs. Optimized consumable delivery response times by 864% (from 3 days to 5 minutes) and decreased technical report closure times by 25%."
+					>
+						Desarrollé SIBOP, un sistema central de inventario que da servicio a ~200 usuarios y comparte autenticación y datos mediante APIs REST. Optimicé los tiempos de respuesta en un 864% (de 3
+						días a 5 minutos) y reduje el tiempo de cierre de reportes técnicos en un 25%.
+					</li>
+					<li
+						class="t-text"
+						data-es="Desarrollo tableros de control en Power BI cruzando información de múltiples bases de datos para extraer KPIs operativos, facilitando la toma de decisiones."
+						data-en="Develop Power BI dashboards and execute complex cross-database queries to extract key operational metrics, enabling data-driven decision-making."
+					>
+						Desarrollo tableros de control en Power BI cruzando información de múltiples bases de datos para extraer KPIs operativos, facilitando la toma de decisiones.
+					</li>
+					<li
+						class="t-text"
+						data-es="Implementé DIGMA, un sistema de transmisión multimedia utilizando WebSockets para controlar en tiempo real el contenido de 52 pantallas en el Hospital San Alejandro."
+						data-en="Implemented DIGMA, a multimedia broadcasting system utilizing WebSockets to remotely manage real-time content across 52 displays at San Alejandro Hospital."
+					>
+						Implementé DIGMA, un sistema de transmisión multimedia utilizando WebSockets para controlar en tiempo real el contenido de 52 pantallas en el Hospital San Alejandro.
+					</li>
+					<li
+						class="t-text"
+						data-es="Diseñé SEAEP (motor de generación dinámica de exámenes) y FOCI (plataforma administrativa). Mantengo un sistema legacy en PHP puro que gestiona más de 8,000 registros, y sistematicé el reporte diario de ausentismo."
+						data-en="Developed SEAEP (dynamic exam generation engine) and FOCI (administrative platform). Maintain a legacy Vanilla PHP system handling 8,000+ records, and digitized mandatory daily absenteeism reporting."
+					>
+						Diseñé SEAEP (motor de generación dinámica de exámenes) y FOCI (plataforma administrativa). Mantengo un sistema legacy en PHP puro que gestiona más de 8,000 registros, y sistematicé el
+						reporte diario de ausentismo.
+					</li>
+				</ul>
+			</div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
-                            </path>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Consultoría Técnica</h3>
-                    <p class="service-description">Asesoramiento experto para optimizar tu infraestructura y procesos
-                        tecnológicos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+			<h2 class="section-title t-text" data-es="Formación Académica" data-en="Education">Formación Académica</h2>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <h2 class="section-title">Contacto</h2>
-            <div class="contact-content">
-                <p class="contact-text">¿Tienes un proyecto en mente? Escríbenos</p>
-                <a href="mailto:cv@luismonroy.dev" class="contact-email">cv@luismonroy.dev</a>
-            </div>
-        </div>
-    </section>
+			<div class="card">
+				<div class="card-header">
+					<div>
+						<span class="job-title t-text" data-es="Maestría en Ingeniería de Software y Sistemas Informáticos" data-en="Master's in Software Engineering and Computer Systems"
+							>Maestría en Ingeniería de Software y Sistemas Informáticos</span
+						>
+						<span class="company"> | Universidad UNIR</span>
+					</div>
+					<span class="date t-text" data-es="04/2025 - Presente" data-en="04/2025 - Present">04/2025 - Presente</span>
+				</div>
+				<p class="card-details t-text" data-es="En curso" data-en="In progress">En curso</p>
+			</div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="footer-text">Software Pragmático LM es una iniciativa de Luis Monroy</p>
-                <button class="privacy-button" onclick="openPrivacyModal()">Aviso de Privacidad</button>
-                <p class="footer-copyright">&copy; 2025 Software Pragmático LM. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
+			<div class="card">
+				<div class="card-header">
+					<div>
+						<span class="job-title t-text" data-es="Licenciatura en Matemáticas" data-en="B.S. in Mathematics">Licenciatura en Matemáticas</span>
+						<span class="company"> | BUAP</span>
+					</div>
+					<span class="date">2019 - 2024</span>
+				</div>
+				<p class="card-details t-text" data-es="Certificado total de estudios" data-en="Full Study Certificate">Certificado total de estudios</p>
+			</div>
 
-    <!-- Privacy Modal -->
-    <div id="privacyModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title">Aviso de Privacidad</h2>
-                <button class="modal-close" onclick="closePrivacyModal()">&times;</button>
-            </div>
-            <div class="modal-body">
-                <h3>Protección de Datos Personales</h3>
-                <p>En Software Pragmático LM nos tomamos muy en serio la privacidad de nuestros clientes y usuarios.</p>
+			<div class="card">
+				<div class="card-header">
+					<div>
+						<span class="job-title t-text" data-es="Licenciatura en Desarrollo de Software" data-en="B.S. in Software Development">Licenciatura en Desarrollo de Software</span>
+						<span class="company"> | IEU</span>
+					</div>
+					<span class="date">2019 - 2022</span>
+				</div>
+				<p class="card-details t-text" data-es="Título y Cédula" data-en="Degree and Professional License">Título y Cédula</p>
+			</div>
 
-                <h4>Compromiso de Privacidad</h4>
-                <p class="privacy-highlight">
-                    <strong>No compartimos, vendemos ni cedemos números de teléfono ni datos personales a terceros con
-                        fines de marketing.</strong>
-                </p>
+			<h2 class="section-title t-text" data-es="Habilidades Técnicas" data-en="Skills">Habilidades Técnicas</h2>
 
-                <h4>Uso de Datos</h4>
-                <p>Los datos personales que recopilamos se utilizan exclusivamente para:</p>
-                <ul>
-                    <li>Soporte técnico directo</li>
-                    <li>Notificaciones solicitadas expresamente por el usuario</li>
-                    <li>Comunicaciones relacionadas con servicios contratados</li>
-                </ul>
+			<div class="skills-container">
+				<span class="skill-tag">Laravel & PHP (Modern/Vanilla)</span>
+				<span class="skill-tag">Python</span>
+				<span class="skill-tag t-text" data-es="Arquitectura API REST" data-en="REST API Architecture">Arquitectura API REST</span>
+				<span class="skill-tag">WebSockets</span>
+				<span class="skill-tag">React (SPA) & JavaScript</span>
+				<span class="skill-tag">SQL Server</span>
+				<span class="skill-tag">Power BI</span>
+				<span class="skill-tag">Windows Server & IIS</span>
+				<span class="skill-tag">Ubuntu Server & Nginx</span>
+				<span class="skill-tag">Git & Postman</span>
+				<span class="skill-tag">Power Automate</span>
+				<span class="skill-tag">L5-Swagger</span>
+				<span class="skill-tag t-text" data-es="Inglés (B1)" data-en="English (B1)">Inglés (B1)</span>
+			</div>
+		</div>
 
-                <h4>Servicios de Terceros</h4>
-                <p>Utilizamos servicios de terceros de confianza como Twilio, Stripe y AWS únicamente para la prestación
-                    de nuestros servicios técnicos. Estos proveedores están sujetos a estrictas políticas de privacidad
-                    y protección de datos.</p>
+		<script>
+			function setLang(lang) {
+				const cvDownloadBtn = document.querySelector(".download-btn");
+				const cvHref = cvDownloadBtn?.getAttribute(`data-cv-${lang}`);
 
-                <h4>Tus Derechos</h4>
-                <p>Tienes derecho a acceder, rectificar, cancelar u oponerte al tratamiento de tus datos personales en
-                    cualquier momento contactándonos en <a href="mailto:cv@luismonroy.dev">cv@luismonroy.dev</a>.</p>
+				document.querySelectorAll(".lang-btn").forEach((btn) => {
+					btn.classList.remove("active");
+					if (btn.innerText.toLowerCase() === lang) {
+						btn.classList.add("active");
+					}
+				});
 
-                <p class="privacy-date"><strong>Última actualización:</strong> Diciembre 2025</p>
-            </div>
-            <div class="modal-footer">
-                <button class="btn-close" onclick="closePrivacyModal()">Cerrar</button>
-            </div>
-        </div>
-    </div>
+				document.querySelectorAll(".t-text").forEach((el) => {
+					el.innerText = el.getAttribute(`data-${lang}`);
+				});
 
-    <script>
-        function openPrivacyModal() {
-            document.getElementById('privacyModal').style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
+				if (cvDownloadBtn && cvHref) {
+					cvDownloadBtn.href = cvHref;
+					cvDownloadBtn.download = lang === "en" ? "CV_Luis_Monroy_EN.pdf" : "CV_Luis_Monroy_ES.pdf";
+				}
 
-        function closePrivacyModal() {
-            document.getElementById('privacyModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        // Close modal when clicking outside
-        window.onclick = function (event) {
-            const modal = document.getElementById('privacyModal');
-            if (event.target === modal) {
-                closePrivacyModal();
-            }
-        }
-
-        // Close modal with ESC key
-        document.addEventListener('keydown', function (event) {
-            if (event.key === 'Escape') {
-                closePrivacyModal();
-            }
-        });
-    </script>
-</body>
-
+				document.documentElement.lang = lang;
+			}
+		</script>
+	</body>
 </html>
